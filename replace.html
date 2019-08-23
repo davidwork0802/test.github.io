@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Name List</h1>
+    Url <br>
+    <input type="text" id="firstN" name="firstname"><br>
+    Replace ID <br>
+    <input type="test" id="lastN" name="lastname"><br>
+
+    <input type="submit" name= "Submit"><br>
+
+    Your ID is: <br>
+    <input type="text" id= "fullname" value="teh"><br>
+    <button onclick="myFunction()">Try It</button>
+    <script>
+      function myFunction(){
+      
+
+        var a = document.getElementById("firstN").value;
+        var b = document.getElementById("lastN").value;
+        var txt = "abc/123";
+        var sln = txt.indexOf("/");
+        //var newtxt = txt.Replace(txt,b);
+        //var str = "Please visit MICROSOFT!";
+        var n = a.replace("teh", b);
+        document.getElementById("fullname").value = n;
+      }
+    </script>
+  </body>
+</html>
